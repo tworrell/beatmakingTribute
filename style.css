@@ -1,0 +1,225 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  h1{
+      text-align: center;
+      font-family: 'Rock Salt', cursive;
+      color: white;
+      text-shadow: 5px 5px red;
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.intro{
+   background-image: url("images/visual4.gif");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+  nav{
+      font-family:  'Permanent Marker', cursive;
+      border-radius: 25px;
+
+  }
+div.paper{
+    
+   /* border: solid black;*/
+    width: 500px;
+  height: 880px;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+audio{
+    align-content: center;
+
+}
+
+h5{
+    color: white;
+    background-color: brown;
+    width: 100px;
+    padding: 10px;
+    font-family: 'Rock Salt', cursive;
+    
+}
+
+/*Essay page styling*/
+/*Styling for stacked paper effect*/
+.paper {
+    background-color: #fff;
+    /* Need position to allow stacking of pseudo-elements */
+    position: relative;
+  }
+  
+  .paper,
+  .paper::before,
+  .paper::after {
+    /* Add shadow to distinguish sheets from each other */
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
+  }
+  
+  .paper::before,
+  .paper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+  }
+  
+  /* Second sheet of paper */
+  .paper::before {
+    left: 7px;
+    top: 5px;
+    z-index: -1;
+  }
+  
+  /* Third sheet of paper */
+  .paper::after {
+    left: 12px;
+    top: 10px;
+    z-index: -2;
+  }
+
+body.essay{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+p{
+    font-family: 'Rock Salt', cursive; 
+}
+h3{
+    font-family: 'Rock Salt', cursive;
+}
+
+/*-----Images CSS-------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little opacity */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #181717;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+body.images{
+    background-image: linear-gradient( 109.6deg,  rgba(0,0,0,0.93) 11.2%, rgba(63,61,61,1) 78.9% );
+}
