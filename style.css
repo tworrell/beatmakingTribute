@@ -15,6 +15,7 @@ ul {
     color: white;
     text-align: center;
     padding: 14px 16px;
+    font-size: 20px;
     text-decoration: none;
   }
   
@@ -47,13 +48,17 @@ ul {
   nav{
       font-family:  'Permanent Marker', cursive;
       border-radius: 25px;
+      width: 100%;
 
   }
+  
+
+
 div.paper{
     
    /* border: solid black;*/
     width: 500px;
-  height: 880px;
+  height: 890px;
   padding: 50px;
   margin: 0 auto;
   text-align: center;
@@ -167,7 +172,7 @@ h3{
 
 /* Caption text */
 .text {
-  color: black;
+  color: red;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
